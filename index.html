@@ -676,7 +676,7 @@ footer a:hover{color:var(--cyan)}.footer-social{display:flex;gap:1.5rem}
       </div>
     </div>
     <div class="rr">
-      <div class="form-grid">
+      <!-- <div class="form-grid">
         <div class="form-row">
           <div class="field"><label>Name</label><input type="text" placeholder="Your name"></div>
           <div class="field"><label>Email</label><input type="email" placeholder="your@email.com"></div>
@@ -684,7 +684,20 @@ footer a:hover{color:var(--cyan)}.footer-social{display:flex;gap:1.5rem}
         <div class="field"><label>Subject</label><input type="text" placeholder="Project inquiry, collaboration..."></div>
         <div class="field"><label>Message</label><textarea placeholder="Tell me about your project or idea..."></textarea></div>
         <button class="btn btn-primary" style="width:fit-content">Send Message <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></button>
-      </div>
+      </div> -->
+      <!-- Replace your entire contact form section fields + button with this -->
+      <form class="form-grid" action="https://formspree.io/f/mgodgwkj" method="POST">
+        <div class="form-row">
+          <div class="field"><label>Name</label><input type="text" name="name" placeholder="Your name" required></div>
+          <div class="field"><label>Email</label><input type="email" name="email" placeholder="your@email.com" required></div>
+        </div>
+        <div class="field"><label>Subject</label><input type="text" name="subject" placeholder="Project inquiry..."></div>
+        <div class="field"><label>Message</label><textarea name="message" placeholder="Tell me about your project..."></textarea></div>
+        <button type="submit" class="btn btn-primary" style="width:fit-content">
+          Send Message
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+        </button>
+      </form>
     </div>
   </div>
 </section>
